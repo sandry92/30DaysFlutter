@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/widgets/drawer.dart';
 
 class HomePage extends StatelessWidget {
   final int num = 100;
@@ -13,7 +14,7 @@ class HomePage extends StatelessWidget {
           child: Text("$name, You are $num% happy...!!"),
         ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }
