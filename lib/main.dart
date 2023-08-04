@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:hello_world/pages/home_page.dart';
 import 'package:hello_world/pages/login_page.dart';
 import 'package:hello_world/utils/myRoutes.dart';
+import 'package:hello_world/widgets/themes.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,11 +18,7 @@ class MyApp extends StatelessWidget {
       //home: HomePage(),
       themeMode: ThemeMode.light,
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        fontFamily: GoogleFonts.lato().fontFamily,
-        primaryTextTheme: GoogleFonts.latoTextTheme(),
-      ),
+      theme: MyTheme.ligthTheme(context),
       darkTheme: ThemeData(
         brightness: Brightness.dark,
       ),
